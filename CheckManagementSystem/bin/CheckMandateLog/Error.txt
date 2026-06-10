@@ -1,0 +1,77 @@
+18/01/2021 12:19:44 PM-System.Configuration.ConfigurationErrorsException: The configuration section cannot contain a CDATA or text element. (E:\user\Murali\CMS_20210104\DevCMSDesktop\CheckManagementSystem\bin\Debug\CheckManagementSystem_uat.vshost.exe.Config line 23)
+   at System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   at System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSection(String configKey)
+   at System.Configuration.ClientConfigurationSystem.System.Configuration.Internal.IInternalConfigSystem.GetSection(String sectionName)
+   at System.Configuration.ConfigurationManager.get_AppSettings()
+   at CheckManagementSystem.LoginBusiness..ctor() in e:\user\Murali\CMS_20210104\DevCMSDesktop\CheckManagementSystem\LoginBusiness.cs:line 18
+   at CheckManagementSystem.frmLogin.LoginValidation() in e:\user\Murali\CMS_20210104\DevCMSDesktop\CheckManagementSystem\frmLogin.cs:line 96
+18/01/2021 12:19:46 PM-System.Configuration.ConfigurationErrorsException: The configuration section cannot contain a CDATA or text element. (E:\user\Murali\CMS_20210104\DevCMSDesktop\CheckManagementSystem\bin\Debug\CheckManagementSystem_uat.vshost.exe.Config line 23)
+   at System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   at System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSection(String configKey)
+   at System.Configuration.ClientConfigurationSystem.System.Configuration.Internal.IInternalConfigSystem.GetSection(String sectionName)
+   at System.Configuration.ConfigurationManager.get_AppSettings()
+   at CheckManagementSystem.LoginBusiness..ctor() in e:\user\Murali\CMS_20210104\DevCMSDesktop\CheckManagementSystem\LoginBusiness.cs:line 18
+   at CheckManagementSystem.frmLogin.LoginValidation() in e:\user\Murali\CMS_20210104\DevCMSDesktop\CheckManagementSystem\frmLogin.cs:line 96
+18/01/2021 12:19:49 PM-System.Configuration.ConfigurationErrorsException: The configuration section cannot contain a CDATA or text element. (E:\user\Murali\CMS_20210104\DevCMSDesktop\CheckManagementSystem\bin\Debug\CheckManagementSystem_uat.vshost.exe.Config line 23)
+   at System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   at System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSection(String configKey)
+   at System.Configuration.ClientConfigurationSystem.System.Configuration.Internal.IInternalConfigSystem.GetSection(String sectionName)
+   at System.Configuration.ConfigurationManager.get_AppSettings()
+   at CheckManagementSystem.LoginBusiness..ctor() in e:\user\Murali\CMS_20210104\DevCMSDesktop\CheckManagementSystem\LoginBusiness.cs:line 18
+   at CheckManagementSystem.frmLogin.LoginValidation() in e:\user\Murali\CMS_20210104\DevCMSDesktop\CheckManagementSystem\frmLogin.cs:line 96
+18/01/2021 12:19:56 PM-System.Configuration.ConfigurationErrorsException: The configuration section cannot contain a CDATA or text element. (E:\user\Murali\CMS_20210104\DevCMSDesktop\CheckManagementSystem\bin\Debug\CheckManagementSystem_uat.vshost.exe.Config line 23)
+   at System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   at System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSection(String configKey)
+   at System.Configuration.ClientConfigurationSystem.System.Configuration.Internal.IInternalConfigSystem.GetSection(String sectionName)
+   at System.Configuration.ConfigurationManager.get_AppSettings()
+   at CheckManagementSystem.LoginBusiness..ctor() in e:\user\Murali\CMS_20210104\DevCMSDesktop\CheckManagementSystem\LoginBusiness.cs:line 18
+   at CheckManagementSystem.frmLogin.LoginValidation() in e:\user\Murali\CMS_20210104\DevCMSDesktop\CheckManagementSystem\frmLogin.cs:line 96
+18/01/2021 12:19:57 PM-System.Configuration.ConfigurationErrorsException: The configuration section cannot contain a CDATA or text element. (E:\user\Murali\CMS_20210104\DevCMSDesktop\CheckManagementSystem\bin\Debug\CheckManagementSystem_uat.vshost.exe.Config line 23)
+   at System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   at System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSection(String configKey)
+   at System.Configuration.ClientConfigurationSystem.System.Configuration.Internal.IInternalConfigSystem.GetSection(String sectionName)
+   at System.Configuration.ConfigurationManager.get_AppSettings()
+   at CheckManagementSystem.LoginBusiness..ctor() in e:\user\Murali\CMS_20210104\DevCMSDesktop\CheckManagementSystem\LoginBusiness.cs:line 18
+   at CheckManagementSystem.frmLogin.LoginValidation() in e:\user\Murali\CMS_20210104\DevCMSDesktop\CheckManagementSystem\frmLogin.cs:line 96
+18/01/2021 12:19:58 PM-System.Configuration.ConfigurationErrorsException: The configuration section cannot contain a CDATA or text element. (E:\user\Murali\CMS_20210104\DevCMSDesktop\CheckManagementSystem\bin\Debug\CheckManagementSystem_uat.vshost.exe.Config line 23)
+   at System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   at System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSection(String configKey)
+   at System.Configuration.ClientConfigurationSystem.System.Configuration.Internal.IInternalConfigSystem.GetSection(String sectionName)
+   at System.Configuration.ConfigurationManager.get_AppSettings()
+   at CheckManagementSystem.LoginBusiness..ctor() in e:\user\Murali\CMS_20210104\DevCMSDesktop\CheckManagementSystem\LoginBusiness.cs:line 18
+   at CheckManagementSystem.frmLogin.LoginValidation() in e:\user\Murali\CMS_20210104\DevCMSDesktop\CheckManagementSystem\frmLogin.cs:line 96
+18/01/2021 12:19:58 PM-System.Configuration.ConfigurationErrorsException: The configuration section cannot contain a CDATA or text element. (E:\user\Murali\CMS_20210104\DevCMSDesktop\CheckManagementSystem\bin\Debug\CheckManagementSystem_uat.vshost.exe.Config line 23)
+   at System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   at System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSection(String configKey)
+   at System.Configuration.ClientConfigurationSystem.System.Configuration.Internal.IInternalConfigSystem.GetSection(String sectionName)
+   at System.Configuration.ConfigurationManager.get_AppSettings()
+   at CheckManagementSystem.LoginBusiness..ctor() in e:\user\Murali\CMS_20210104\DevCMSDesktop\CheckManagementSystem\LoginBusiness.cs:line 18
+   at CheckManagementSystem.frmLogin.LoginValidation() in e:\user\Murali\CMS_20210104\DevCMSDesktop\CheckManagementSystem\frmLogin.cs:line 96
