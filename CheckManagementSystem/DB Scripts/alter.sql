@@ -1,0 +1,1 @@
+﻿alter table cms_mst_micrcts modify column branch_name text default null;

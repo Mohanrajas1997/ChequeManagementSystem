@@ -1,0 +1,698 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{51CE4F35-673B-46F8-BFED-D2E40490B561}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CheckManagementSystem</RootNamespace>
+    <AssemblyName>CheckManagementSystem_uat</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\CMSBuild\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>CheckManagementSystem.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>EEC1EA39F9A58E144DAEE14F9844097970ED44C2</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>CheckManagementSystem_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>gnsa-logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.RANGERLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AxInterop.RANGERLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.RANGERLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Interop.RANGERLib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.26.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.3.5.8\lib\35\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SmartThreadPool">
+      <HintPath>..\packages\SmartThreadPool.dll.2.2.6\lib\net45\SmartThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tesseract">
+      <HintPath>..\packages\Tesseract.2.4.1.0\lib\net451\Tesseract.dll</HintPath>
+    </Reference>
+    <Reference Include="VintaSoft.Tiff, Version=2.0.0.4, Culture=neutral, PublicKeyToken=153caf29a10d2e31">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\VintaSoft.Tiff.dll</HintPath>
+    </Reference>
+    <Reference Include="VintaSoft.Twain, Version=2.0.0.3, Culture=neutral, PublicKeyToken=153caf29a10d2e31">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\VintaSoft.Twain.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountMst_Rpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountMst_Rpt.Designer.cs">
+      <DependentUpon>AccountMst_Rpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMasterBusiness.cs" />
+    <Compile Include="AlternateMicr_Rpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlternateMicr_Rpt.designer.cs">
+      <DependentUpon>AlternateMicr_Rpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BatchEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BatchEntry.Designer.cs">
+      <DependentUpon>BatchEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BatchEntryBusiness.cs" />
+    <Compile Include="BatchQueue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BatchQueue.Designer.cs">
+      <DependentUpon>BatchQueue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Batch_Rpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Batch_Rpt.Designer.cs">
+      <DependentUpon>Batch_Rpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckerBusiness.cs" />
+    <Compile Include="CheckerScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckerScreen.Designer.cs">
+      <DependentUpon>CheckerScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Checker_Rpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Checker_Rpt.Designer.cs">
+      <DependentUpon>Checker_Rpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckManagementSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckManagementSystem.Designer.cs">
+      <DependentUpon>CheckManagementSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cheque_Rpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cheque_Rpt.designer.cs">
+      <DependentUpon>Cheque_Rpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigHelper.cs" />
+    <Compile Include="CtsSingleChqEntryNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CtsSingleChqEntryNew.Designer.cs">
+      <DependentUpon>CtsSingleChqEntryNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerMaster_Rpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerMaster_Rpt.Designer.cs">
+      <DependentUpon>CustomerMaster_Rpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataConnection.cs" />
+    <Compile Include="frmImagePurge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImagePurge.designer.cs">
+      <DependentUpon>frmImagePurge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRights.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRights.designer.cs">
+      <DependentUpon>frmRights.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserManagementReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserManagementReport.designer.cs">
+      <DependentUpon>frmUserManagementReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserMaster.designer.cs">
+      <DependentUpon>frmUserMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Getinwardbusiness.cs" />
+    <Compile Include="Inward.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inward.Designer.cs">
+      <DependentUpon>Inward.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InwardBusiness.cs" />
+    <Compile Include="InwardEntites.cs" />
+    <Compile Include="InwardQueue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InwardQueue.Designer.cs">
+      <DependentUpon>InwardQueue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inward_Rpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inward_Rpt.Designer.cs">
+      <DependentUpon>Inward_Rpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocationMst_Rpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocationMst_Rpt.Designer.cs">
+      <DependentUpon>LocationMst_Rpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogHelper.cs" />
+    <Compile Include="LoginBusiness.cs" />
+    <Compile Include="LoginEntities.cs" />
+    <Compile Include="MakerQueue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MakerQueue.Designer.cs">
+      <DependentUpon>MakerQueue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MakerScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MakerScreen.Designer.cs">
+      <DependentUpon>MakerScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maker_Rpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maker_Rpt.Designer.cs">
+      <DependentUpon>Maker_Rpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapCtsChqWithScan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MapCtsChqWithScan.Designer.cs">
+      <DependentUpon>MapCtsChqWithScan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterBusiness.cs" />
+    <Compile Include="MasterEntities.cs" />
+    <Compile Include="MasterRpt_Business.cs" />
+    <Compile Include="MasterUploadTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterUploadTemplate.Designer.cs">
+      <DependentUpon>MasterUploadTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MicrEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MicrEntry.Designer.cs">
+      <DependentUpon>MicrEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MicrMasterAdding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MicrMasterAdding.Designer.cs">
+      <DependentUpon>MicrMasterAdding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MicrMaster_Rpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MicrMaster_Rpt.Designer.cs">
+      <DependentUpon>MicrMaster_Rpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MicrUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MicrUpdate.Designer.cs">
+      <DependentUpon>MicrUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MicrUpdateList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MicrUpdateList.Designer.cs">
+      <DependentUpon>MicrUpdateList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MicrUpdateQueue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MicrUpdateQueue.Designer.cs">
+      <DependentUpon>MicrUpdateQueue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MicrUpdateScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MicrUpdateScreen.Designer.cs">
+      <DependentUpon>MicrUpdateScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rejection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rejection.Designer.cs">
+      <DependentUpon>Rejection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RejectionQueue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RejectionQueue.Designer.cs">
+      <DependentUpon>RejectionQueue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rejection_Rpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rejection_Rpt.Designer.cs">
+      <DependentUpon>Rejection_Rpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScanChq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScanChq.Designer.cs">
+      <DependentUpon>ScanChq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScanCtsChq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScanCtsChq.Designer.cs">
+      <DependentUpon>ScanCtsChq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScannerBusiness.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScannerEntities.cs" />
+    <Compile Include="ScanQueue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScanQueue.Designer.cs">
+      <DependentUpon>ScanQueue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetPassword.designer.cs">
+      <DependentUpon>SetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatusWiseCheque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatusWiseCheque.Designer.cs">
+      <DependentUpon>StatusWiseCheque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TheamClass.cs" />
+    <Compile Include="ctsMultipleChqEntryNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ctsMultipleChqEntryNew.Designer.cs">
+      <DependentUpon>ctsMultipleChqEntryNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UploadBusiness.cs" />
+    <Compile Include="UploadMICR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UploadMICR.Designer.cs">
+      <DependentUpon>UploadMICR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UploadmicrBusiness.cs" />
+    <Compile Include="UploadMicrEntites.cs" />
+    <Compile Include="UploadQueue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UploadQueue.Designer.cs">
+      <DependentUpon>UploadQueue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Upload_Rpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Upload_Rpt.Designer.cs">
+      <DependentUpon>Upload_Rpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserGroup.designer.cs">
+      <DependentUpon>UserGroup.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AccountMst_Rpt.resx">
+      <DependentUpon>AccountMst_Rpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlternateMicr_Rpt.resx">
+      <DependentUpon>AlternateMicr_Rpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BatchEntry.resx">
+      <DependentUpon>BatchEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BatchQueue.resx">
+      <DependentUpon>BatchQueue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Batch_Rpt.resx">
+      <DependentUpon>Batch_Rpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckerScreen.resx">
+      <DependentUpon>CheckerScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Checker_Rpt.resx">
+      <DependentUpon>Checker_Rpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckManagementSystem.resx">
+      <DependentUpon>CheckManagementSystem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cheque_Rpt.resx">
+      <DependentUpon>Cheque_Rpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtsSingleChqEntryNew.resx">
+      <DependentUpon>CtsSingleChqEntryNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerMaster_Rpt.resx">
+      <DependentUpon>CustomerMaster_Rpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImagePurge.resx">
+      <DependentUpon>frmImagePurge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRights.resx">
+      <DependentUpon>frmRights.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserManagementReport.resx">
+      <DependentUpon>frmUserManagementReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserMaster.resx">
+      <DependentUpon>frmUserMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inward.resx">
+      <DependentUpon>Inward.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InwardQueue.resx">
+      <DependentUpon>InwardQueue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inward_Rpt.resx">
+      <DependentUpon>Inward_Rpt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocationMst_Rpt.resx">
+      <DependentUpon>LocationMst_Rpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MakerQueue.resx">
+      <DependentUpon>MakerQueue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MakerScreen.resx">
+      <DependentUpon>MakerScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maker_Rpt.resx">
+      <DependentUpon>Maker_Rpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapCtsChqWithScan.resx">
+      <DependentUpon>MapCtsChqWithScan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterUploadTemplate.resx">
+      <DependentUpon>MasterUploadTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MicrEntry.resx">
+      <DependentUpon>MicrEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MicrMasterAdding.resx">
+      <DependentUpon>MicrMasterAdding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MicrMaster_Rpt.resx">
+      <DependentUpon>MicrMaster_Rpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MicrUpdate.resx">
+      <DependentUpon>MicrUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MicrUpdateList.resx">
+      <DependentUpon>MicrUpdateList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MicrUpdateQueue.resx">
+      <DependentUpon>MicrUpdateQueue.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MicrUpdateScreen.resx">
+      <DependentUpon>MicrUpdateScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Rejection.resx">
+      <DependentUpon>Rejection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RejectionQueue.resx">
+      <DependentUpon>RejectionQueue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rejection_Rpt.resx">
+      <DependentUpon>Rejection_Rpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScanChq.resx">
+      <DependentUpon>ScanChq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScanCtsChq.resx">
+      <DependentUpon>ScanCtsChq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScanQueue.resx">
+      <DependentUpon>ScanQueue.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetPassword.resx">
+      <DependentUpon>SetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatusWiseCheque.resx">
+      <DependentUpon>StatusWiseCheque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctsMultipleChqEntryNew.resx">
+      <DependentUpon>ctsMultipleChqEntryNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UploadMICR.resx">
+      <DependentUpon>UploadMICR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UploadQueue.resx">
+      <DependentUpon>UploadQueue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Upload_Rpt.resx">
+      <DependentUpon>Upload_Rpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserGroup.resx">
+      <DependentUpon>UserGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="CheckManagementSystem_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="gnsa-logo.ico" />
+    <None Include="Images\plus.png" />
+    <None Include="Images\plus %281%29.png" />
+    <None Include="Images\plus %282%29.png" />
+    <Content Include="x64\liblept168.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\libtesseract302.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\liblept168.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\libtesseract302.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
